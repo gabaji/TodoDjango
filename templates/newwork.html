@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<h1>
+    New ToDo
+</h1>
+<form action="" method="post">
+    {% csrf_token %}
+
+    <textarea type="message" rows="10" cols="30" name="work">
+ToDo
+    </textarea>
+    <label for="time">Date:</label>
+    <input type="date" id="date" name="time"> 
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+
+
+{% endblock %}
